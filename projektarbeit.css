@@ -1,0 +1,549 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #D3C8FF;
+}
+/*Grid*/
+body {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100px 100px 1fr max-content;
+    grid-template-areas:
+    "header header"
+    "navigation navigation"
+    "content sidebar"
+    "footer footer";
+}
+header {
+    border: 3px solid black;
+    margin: 10px;
+    grid-area: header;
+    background-color: var(--secondcolor);
+    color: white;
+}
+nav {
+    border: 3px solid var(--secondcolor);
+    margin: 10px;
+    grid-area: navigation;
+}
+main {
+    border: 3px solid var(--secondcolor);
+    margin: 10px;
+    grid-area: content;
+    background-color: var(--fifthcolor);
+}
+aside {
+    border: 3px solid var(--secondcolor);
+    margin: 10px;
+    grid-area: sidebar;
+    padding: 10px;
+    text-align: justify;
+    background-color: var(--fifthcolor);
+}
+footer {
+    border: 3px solid black;
+    margin: 10px;
+    grid-area: footer;
+    background-color: var(--thirdcolor);
+    color: #ffc0fa;
+}
+/*>Grid*/
+
+
+/*Flexboxen*/
+/*Header*/
+#titel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+/*Nav*/
+#navigation {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--thirdcolor);
+    margin: 10px;
+    list-style: none;
+}
+
+/*mainp1*/
+#mainp1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#topsongs {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+#msjackson {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    text-align: justify;
+}
+
+#msjacksonv {
+    margin: 10px;
+    width: auto;
+}
+
+/*mainp2*/
+#leaks {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    text-align: justify;
+}
+
+#leaksresp {
+    width: 100%;
+}
+
+#formular {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+#mainp2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*footer*/
+#foot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#aboutme {
+    width: auto;
+    margin: 10px;
+}
+
+#aboutpashanim {
+    width: auto; 
+    margin-top: 10px;
+}
+
+#wozu {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    text-align: justify;
+}
+/*>Flexboxen*/
+
+/*Farben*/
+:root {
+    --firstcolor: #5c24b2;
+    --secondcolor: #350a78;
+    --thirdcolor: #440e99;
+    --fourthcolor: #7242bd;
+    --fifthcolor: #8e65ce;
+}
+
+h2 {
+    background-color: var(--firstcolor);
+    padding: 5px;
+    color: white;
+}
+/*>Farben*/
+
+/*Links*/
+a {
+    text-decoration:underline;
+    color: white;
+}
+
+a:hover {
+    text-decoration:line-through;
+    color: #ff00fa;
+}
+/*>Links*/
+
+/*Asap weitere regeln main*/
+#praisethelord {
+    margin: 30px;
+}
+
+#langerh2 {
+    margin: 10px;
+    text-align: center;
+}
+
+   #asapstyle {
+    border: 3px solid var(--secondcolor);
+    margin: 10px; 
+    background-color: #D3C8FF;
+    height: 62%;
+    width: 95%;
+  }
+
+  #style {
+    text-align: center;
+    background-color: var(--firstcolor);
+    margin: 10px;
+    color: white;
+ }
+
+ #outfits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+ }
+
+#pic11 {
+    margin: 10px;
+    width: 45%;
+    border: 3px solid var(--secondcolor);
+}
+
+#pic22 {
+    margin: 10px;
+    width: 45%;
+    border: 3px solid var(--secondcolor);
+}
+/*>Asap weitere regeln main*/
+
+/*Metro weitere regeln Main*/
+#produzent {
+    text-align: justify;
+    margin: 10px;
+    width: 40%;
+}
+
+#mainp2metro {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #D3C8FF;
+    border: 3px solid var(--secondcolor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;  
+}
+
+#vid1 {
+    border: 3px solid var(--secondcolor);
+    margin: 10px;
+    width: 50%;
+}
+
+#vid2 {
+    border: 3px solid var(--secondcolor);
+   margin: 10px;
+    width: 50%;
+}
+
+#vid1resp {
+    width: 100%;
+}
+
+#vid2resp {
+    width: 100%;
+}
+
+#mainp2metro2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: #D3C8FF;
+    border: 3px solid var(--secondcolor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#pic1 {
+    border: 3px solid var(--secondcolor);
+    margin: 10px;
+    width: 50%;
+}
+
+#pic2 {
+    border: 3px solid var(--secondcolor);
+    margin: 10px;
+    width: 50%;
+}
+/*>Metro weitere regeln Main*/
+
+/*Website responsive machen*/
+
+/*900px und weniger*/
+@media screen and (max-width: 900px) {
+        /*grid*/
+        body {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100px 100px max-content 1fr max-content;
+            grid-template-areas: 
+            "header"
+            "navigation"
+            "sidebar"
+            "content"
+            "footer";
+        }
+        /*>grid*/
+
+        /*pasha*/
+        #mainp2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        #mainp1 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas:
+            "topsongs nichtnurrapper"
+            "msjackson msjackson"
+        }
+
+        #topsongs {
+            grid-area: topsongs;
+        }
+
+        #msjackson{
+            grid-area: nichtnurrapper;
+            width: 93%;
+        }
+
+        #msjacksonv {
+            grid-area: msjackson;
+        }
+
+        #msjacksonvresp {
+            width: 100%;
+        }
+
+        #leaks {
+            width: 95%;
+        }
+
+        #leaksresp {
+            width: 100%;
+        }
+
+        #foot {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas:
+            "aboutme aboutk"
+            "wieso wieso"
+        }
+
+        #aboutme {
+            grid-area: aboutme;
+        }
+
+        #aboutpashanim{
+            grid-area: aboutk;
+        }
+
+        #wozu{
+            grid-area: wieso;
+            width: 93%;
+        }
+
+        #formular {
+            width: 95%;
+            height: auto;
+            margin: 10px;
+            margin-bottom: 10px; 
+        }
+    
+        #formularcenter {
+            width: 35%;
+            margin: 0 auto;
+        }
+        /*>pasha*/
+
+        /*asap*/
+        #praisethelord {
+            width: 85%;
+        }
+
+        #asapstyle {
+            height: auto;
+        }
+        /*asap*/
+
+        /*metro*/
+        #produzent {
+            width: 90%;
+        }
+        /*>metro*/
+}
+/*>900px und weniger*/
+
+/*600px und weniger*/
+/*pasha*/
+@media screen and (max-width: 600px){
+    /*grid*/
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px auto 1fr auto;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "sidebar"
+        "content"
+        "footer";
+    }
+    /*>grid*/
+
+    /*Mainp1*/
+    #mainp1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #topsongs {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    #msjackson {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+        text-align: justify;
+    }
+    
+    #msjacksonv {
+        width: 95%;
+        margin: 10px;
+    }
+
+    #msjacksonvresp {
+        width: 95%;
+        margin: 10px;
+    }
+
+    #leaksresp {
+        width: 95%;
+        margin: 10px;
+    }
+    /*>Mainp1*/
+
+    /*mainp2*/
+    #mainp2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #leaks {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+        text-align: justify;
+    }
+    
+    #formular {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+        margin-bottom: 10px; 
+    }
+
+    #formularcenter {
+        width: 35%;
+        margin: 0 auto;
+    }
+    /*>mainp2*/
+
+    /*footer*/
+    #foot {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #aboutme {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    #aboutpashanim {
+        width: 95%;
+        height: auto; 
+        margin: 10px;
+    }
+    
+    #wozu {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+        text-align: justify;
+    }
+    /*>footer*/
+
+/*>pasha*/
+
+/*asap*/
+#praisethelord {
+    width: 95%;
+    margin: 10px;
+}
+
+#langerh2 {
+    width: 95%;
+    margin: 10px;
+}
+
+#asapstyle {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+}
+/*>asap*/
+
+/*metro*/
+#produzent {
+    width: 95%;
+    margin: 10px;
+}
+
+#mainp2metro {
+    width: 95%;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+#mainp2metro2 {
+    width: 95%;
+    margin: 10px;
+}
+/*>metro*/
+}
+/*>600px und weniger*/
+/*>Website responsive machen*/
