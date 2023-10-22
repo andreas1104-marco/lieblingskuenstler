@@ -27,6 +27,7 @@ nav {
     border: 3px solid var(--secondcolor);
     margin: 10px;
     grid-area: navigation;
+    height: max-content;
 }
 main {
     border: 3px solid var(--secondcolor);
@@ -404,7 +405,7 @@ a:hover {
     body {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 100px auto 1fr auto;
+        grid-template-rows: 100px max-content auto 1fr auto;
         grid-template-areas: 
         "header"
         "navigation"
