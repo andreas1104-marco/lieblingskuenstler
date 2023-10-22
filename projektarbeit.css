@@ -414,6 +414,17 @@ a:hover {
     }
     /*>grid*/
 
+    /*nav*/
+#navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--thirdcolor);
+    margin: 10px;
+    list-style: none;
+}
+    /*nav*/
+
     /*Mainp1*/
     #mainp1 {
         display: flex;
